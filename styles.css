@@ -2,6 +2,27 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
-  }
+}
+
+.centerwidth {
+    text-align: center;
+}
+
+.flashing {
+    animation-name: flash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes flash {
+    0%   {color:red;}
+    25%  {color:yellow;}
+    50%  {color:green;}
+    75%  {color:blue;}
+    100% {color:red;}
+}
